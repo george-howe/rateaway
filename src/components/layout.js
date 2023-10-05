@@ -1,28 +1,13 @@
 import { Link } from 'gatsby';
 import * as React from 'react';
+import Nav from './Nav/Nav';
 
 const Layout = ({ children }) => {
     return (
         <div>
-            <header>HELLO</header>
-            <nav>
-                <ul>
-                    <li>
-                        <Link to="/">1</Link>
-                    </li>
-                    <li>
-                        <Link to="/">2</Link>
-                    </li>
-                    <li>
-                        <Link to="/">3</Link>
-                    </li>
-                    <li>
-                        <Link to="/">4</Link>
-                    </li>
-                </ul>
-            </nav>
+            {/* Deal with later */}
+            {/* <Nav /> */}
             <main>
-                <h1>HI THERE</h1>
                 {children}
             </main>
         </div>

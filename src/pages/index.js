@@ -1,7 +1,7 @@
 import * as React from "react";
 import Layout from "../components/layout";
 
-const IndexPage = () => {
+const Home = () => {
   return (
     <Layout>
       <p>Testing...testing...123</p>
@@ -9,6 +9,6 @@ const IndexPage = () => {
   )
 }
 
-export default IndexPage;
+export default Home;
 
-export const Head = () => <title>Home Page</title>;
+// export const Head = () => <title>Home Page</title>;
