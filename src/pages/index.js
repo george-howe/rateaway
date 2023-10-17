@@ -1,10 +1,30 @@
 import * as React from "react";
 import Layout from "../components/layout";
+import { graphql, useStaticQuery } from "gatsby";
+import RatingBox from "../components/RatingBox/RatingBox";
 
 const Home = () => {
+  const data = useStaticQuery(graphql`
+    query {
+      allMarkdownRemark {
+        nodes {
+          frontmatter {
+            name
+            takeaway
+            notes
+            rating
+          }
+        }
+      }
+    }
+  `)
   return (
     <Layout>
-      <p>Testing...testing...123</p>
+      {
+        data.allMarkdownRemark.nodes.map(node => (
+          <RatingBox node={node} />
+        ))
+      }
     </Layout>
   )
 }
