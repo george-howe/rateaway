@@ -1,6 +1,7 @@
-import { Link } from 'gatsby';
+//import { Link } from 'gatsby';
 import * as React from 'react';
-import Nav from './Nav/Nav';
+//import Nav from '../Nav/Nav';
+import './style/layout.scss';
 
 const Layout = ({ children }) => {
     return (

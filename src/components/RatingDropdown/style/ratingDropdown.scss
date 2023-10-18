@@ -1,0 +1,15 @@
+@import "../../../assets/fonts/font-definitions.scss";
+
+.ratingDropdown {
+    &-container {
+        padding: 40px;
+        
+        h1 {
+            font-size: 5rem;
+            font-family: 'Nunito', sans-serif;
+            color: #333;
+            display: inline-block;
+            margin-right: 10px;
+        }
+    }
+}

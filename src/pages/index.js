@@ -1,7 +1,8 @@
 import * as React from "react";
-import Layout from "../components/layout";
+import Layout from "../components/Layout/layout";
 import { graphql, useStaticQuery } from "gatsby";
-import RatingBox from "../components/RatingBox/RatingBox";
+//import RatingBox from "../components/RatingBox/RatingBox";
+import RatingDropdown from '../components/RatingDropdown/RatingDropdown';
 
 const Home = () => {
   const data = useStaticQuery(graphql`
@@ -20,11 +21,12 @@ const Home = () => {
   `)
   return (
     <Layout>
-      {
+      {/* {
         data.allMarkdownRemark.nodes.map(node => (
           <RatingBox node={node} />
         ))
-      }
+      } */}
+      <RatingDropdown ratings={data.allMarkdownRemark.nodes}/>
     </Layout>
   )
 }
