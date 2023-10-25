@@ -5,9 +5,9 @@ import './style/nav.scss';
 const Nav = () => {
     return (
         <nav>
-            <div className="logoish">
+            {/* <div className="logoish">
                 <span>WWAT</span>
-            </div>
+            </div> */}
         </nav>
     )
 }
