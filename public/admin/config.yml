@@ -7,7 +7,7 @@ public_folder: /img
 
 collections:
   - name: 'rating'
-    label: 'Rating'
+    label: 'Takeaway Ratings'
     folder: 'content/rating'
     create: true
     slug: 'index'
@@ -20,5 +20,8 @@ collections:
       - { label: 'Name', name: 'name', widget: 'string' }
       - { label: 'Date', name: 'date', widget: 'datetime' }
       - { label: 'Takeaway', name: 'takeaway', widget: 'string'}
-      - { label: 'Rating', name: 'rating', widget: 'string' }
+      - { label: 'George's Rating', name: 'georgeRating', widget: 'string' }
+      - { label: 'Josh's Rating', name: 'joshRating', widget: 'string' }
+      - { label: 'Pete's Rating', name: 'peteRating', widget: 'string' }
+      - { label: 'Overall Rating', name: 'overallRating', widget: 'string' }
       - { label: 'Notes', name: 'notes', widget: 'markdown' }
