@@ -20,8 +20,8 @@ collections:
       - { label: 'Name', name: 'name', widget: 'string' }
       - { label: 'Date', name: 'date', widget: 'datetime' }
       - { label: 'Takeaway', name: 'takeaway', widget: 'string'}
-      - { label: 'George Rating', name: 'georgeRating', widget: 'string' }
-      - { label: 'Josh Rating', name: 'joshRating', widget: 'string' }
-      - { label: 'Pete Rating', name: 'peteRating', widget: 'string' }
+      - { label: 'George Rating', name: 'georgeRating', widget: 'number' }
+      - { label: 'Josh Rating', name: 'joshRating', widget: 'number' }
+      - { label: 'Pete Rating', name: 'peteRating', widget: 'number' }
       - { label: 'Overall Rating', name: 'overallRating', widget: 'string' }
       - { label: 'Notes', name: 'notes', widget: 'markdown' }

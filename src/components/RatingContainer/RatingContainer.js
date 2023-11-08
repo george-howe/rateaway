@@ -13,12 +13,29 @@ const RatingContainer = ({ ratings }) => {
 
     const getTopRatedForChosenTakeaway = () => {
         const takeawayRatings = ratings.filter((rating) => rating.frontmatter.takeaway.toUpperCase() === takeawayType);
+        
+        takeawayRatings.map((tr) => {
+            const {
+                georgeRating,
+                joshRating,
+                peteRating
+            } = tr.frontmatter;
+
+            const allRatings = [];
+            allRatings.push(georgeRating, joshRating, peteRating);
+
+            const initialValue = 0;
+            const overallRating = Math.round(allRatings.reduce((accumulator, currentValue) => accumulator + currentValue, initialValue,)/allRatings.length);
+            
+            tr.frontmatter.overallRating = overallRating;
+        })
 
         const topRatingNumber = Math.max(...takeawayRatings.map(takeawayRating => takeawayRating.frontmatter.overallRating));
 
-        const topRated = takeawayRatings.filter((rating) => rating.frontmatter.overallRating.match(topRatingNumber));
+        const topRated = takeawayRatings.filter((rating) => rating.frontmatter.overallRating === topRatingNumber);
 
         return topRated;
+        
     }
 
 

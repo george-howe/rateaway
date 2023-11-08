@@ -14,6 +14,9 @@ const Home = () => {
             name
             takeaway
             notes
+            georgeRating
+            joshRating
+            peteRating
             overallRating
           }
         }
